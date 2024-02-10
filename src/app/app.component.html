@@ -1,14 +1,9 @@
 <style>
-  .moveSlider {
-    display: flex;
-    position: relative;
-    left: 0px;
-    transition: ease-in-out 0.2s;
-  }
+
 
   .slider {
     display: flex;
-    width: 150px;
+    width: 100%;
     overflow: hidden;
   }
 
@@ -19,24 +14,39 @@
   }
 
   .photosmini {
-    width: 40px;
-    height: 40px;
+    width: 120px;
+    object-fit: cover;
   }
 </style>
 
-<div class="toolbar" role="banner">
-  <div class="slider">
-    <div class="moveSlider">
-      <div *ngFor="let p of photos">
-        <img class="photosmini" [src]="p.url">
-      </div>
+<div class="mainDisplay">
+  <div class="slide">
+    <div class="showPhoto">
+      <img class="photo" [src]="photos[slide-1].url">
+    </div>
+    <div class="buttons">
+      <button (click)="leftSlide($event)" [disabled]="slide <= 1">
+        <img src="./assets/img/right.png" class="revers">
+      </button>
+      <button (click)="rightSlide($event)" [disabled]="slide >= photos.length">
+        <img src="./assets/img/right.png">
+      </button>
     </div>
   </div>
-
-  <div class="showPhoto">
-    <img class="photo" [src]="photos[slide-1].url">
+  <div class="slider">
+    <div class="moveSlider">
+        <img class="photosmini" *ngFor="let p of photos; let index = index" [src]="p.url" (click)="slide = index+1">
+    </div>
+    <div class="buttons">
+      <button (click)="leftSlider($event)" [disabled]="state.sliderCons">
+        <img src="./assets/img/right.png" class="revers">
+      </button>
+      <button (click)="rightSlider($event)" [disabled]="state.sliderPlus">
+      <img src="./assets/img/right.png"></button>
+    </div>
   </div>
-  <button (click)="leftSlide($event)" [disabled]="slide <= 1">-</button>
-  <button (click)="rightSlide($event)" [disabled]="slide >= photos.length">+</button>
 </div>
+
+
+
 <router-outlet></router-outlet>
