@@ -13,19 +13,16 @@
     height: 450px;
   }
 
-  .photosmini {
-    width: 120px;
-    object-fit: cover;
-  }
 </style>
 
 <div class="mainDisplay">
   <div class="slide">
     <div class="showPhoto">
-      <img class="photo" [src]="photos[slide-1].url">
+      <img class="photo" [src]="photos[slide-1].url"
+           (click)="popup ? popup = false : popup = true">
     </div>
     <div class="buttons">
-      <button (click)="leftSlide($event)" [disabled]="slide <= 1">
+      <button (click)="leftSlide()" [disabled]="slide <= 1">
         <img src="./assets/img/right.png" class="revers">
       </button>
       <button (click)="rightSlide($event)" [disabled]="slide >= photos.length">
@@ -33,18 +30,11 @@
       </button>
     </div>
   </div>
-  <div class="slider">
-    <div class="moveSlider">
-        <img class="photosmini" *ngFor="let p of photos; let index = index" [src]="p.url" (click)="slide = index+1">
-    </div>
-    <div class="buttons">
-      <button (click)="leftSlider($event)" [disabled]="state.sliderCons">
-        <img src="./assets/img/right.png" class="revers">
-      </button>
-      <button (click)="rightSlider($event)" [disabled]="state.sliderPlus">
-      <img src="./assets/img/right.png"></button>
-    </div>
-  </div>
+<app-slider [slide]="slide" [photos]="photos" [state]="state" (ChangeSlide)="onChangeData($event)"
+            class="slider">
+</app-slider>
+    <app-pop-up *ngIf="popup" [photo]="photos[slide-1]" (changepopup)="onChangePopup($event)">
+    </app-pop-up>
 </div>
 
 

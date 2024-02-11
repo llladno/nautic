@@ -37,29 +37,6 @@ button .revers {
   width: 600px;
 }
 .slide .buttons {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.slider {
-  position: relative;
-}
-.slider .moveSlider {
-  height: 75px;
-  display: flex;
-  position: relative;
-  width: 100%;
-  left: 0px;
-  transition: ease-in-out 0.2s;
-}
-.slider .buttons {
   pointer-events: none;
   position: absolute;
   display: flex;
@@ -71,8 +48,60 @@ button .revers {
   height: 100%;
   z-index: 1;
 }
-.slider .buttons button {
+.slide .buttons button {
   pointer-events: all;
+}
+
+.slider {
+  position: relative;
+}
+
+app-pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  backdrop-filter: brightness(0.4);
+}
+app-pop-up .info {
+  display: flex;
+  justify-content: space-between;
+}
+app-pop-up button {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 40px;
+  font-size: 30px;
+  border-radius: 50px;
+}
+app-pop-up .place {
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+app-pop-up .commentImg {
+  width: 15px;
+  height: 15px;
+}
+app-pop-up img {
+  width: 100%;
+  height: 500px;
+}
+app-pop-up .comment {
+  margin-top: 20px;
+  padding: 5px 10px;
+  background: #eaeaea;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

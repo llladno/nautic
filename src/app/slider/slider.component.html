@@ -1,1 +1,12 @@
-<p>slider works!</p>
+  <div class="moveSlider">
+    <img class="photosmini" *ngFor="let p of photos; let index = index" [src]="p.url"
+         (click)="ChangeSlide.emit(slide = index + 1)">
+  </div>
+  <div class="buttons">
+    <button (click)="leftSlider()" [disabled]="state?.sliderCons || slide === undefined ? null : slide <= 1">
+      <img src="./assets/img/right.png" class="revers">
+    </button>
+    <button (click)="rightSlider()" [disabled]="state?.sliderPlus">
+      <img src="./assets/img/right.png"></button>
+  </div>
+

@@ -1,42 +1,68 @@
 {
   "photos":[
     {
-      "autor": "Bob",
+      "author": "Bob",
       "date": "05-06-2023",
-      "url": "https://i.pinimg.com/originals/db/b3/bc/dbb3bc5c461f6cfdde74e829fac29e43.jpg"
+      "url": "https://i.pinimg.com/originals/db/b3/bc/dbb3bc5c461f6cfdde74e829fac29e43.jpg",
+      "comments": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Ultrices in iaculis nunc sed augue lacus viverra vitae.",
+        "Aenean et tortor at risus viverra adipiscing. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Facilisis magna etiam tempor orci eu lobortis elementum nibh."
+      ]
     },
     {
-      "autor": "Bob",
+      "author": "Bob",
       "date": "08-06-2023",
-      "url": "https://w.forfun.com/fetch/e6/e603425a2488ac4ae177fd64951ad0e6.jpeg"
+      "url": "https://w.forfun.com/fetch/e6/e603425a2488ac4ae177fd64951ad0e6.jpeg",
+      "comments": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Ultrices in iaculis nunc sed augue lacus viverra vitae."
+      ]
     },
     {
-      "autor": "Jack",
+      "author": "Jack",
       "date": "12-06-2023",
-      "url": "https://w.forfun.com/fetch/e2/e2092a2bba26bc1aad412fadc70188ea.jpeg"
+      "url": "https://w.forfun.com/fetch/e2/e2092a2bba26bc1aad412fadc70188ea.jpeg",
+      "comments": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Ultrices in iaculis nunc sed augue lacus viverra vitae.",
+        "Aenean et tortor at risus viverra adipiscing. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Facilisis magna etiam tempor orci eu lobortis elementum nibh."
+      ]
     },
     {
-      "autor":"Thomas",
+      "author":"Thomas",
       "date": "18-07-2023",
-      "url": "https://w.forfun.com/fetch/1e/1e0783c1571e76f71b9bdf2308ffe308.jpeg"
+      "url": "https://w.forfun.com/fetch/1e/1e0783c1571e76f71b9bdf2308ffe308.jpeg",
+      "comments": [
+        "Ultrices in iaculis nunc sed augue lacus viverra vitae.",
+        "Aenean et tortor at risus viverra adipiscing. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Facilisis magna etiam tempor orci eu lobortis elementum nibh."
+      ]
     },
     {
-      "autor":"Bill",
+      "author":"Bill",
       "date": "08-07-2023",
-      "url": "https://w.forfun.com/fetch/5b/5b35f75cd0d08be28d243ae083c57783.jpeg"
+      "url": "https://w.forfun.com/fetch/5b/5b35f75cd0d08be28d243ae083c57783.jpeg",
+      "comments": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Aenean et tortor at risus viverra adipiscing. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Facilisis magna etiam tempor orci eu lobortis elementum nibh."
+      ]
     },
     {
-      "autor":"Bob",
+      "author":"Bob",
       "date": "23-08-2023",
-      "url": "https://w.forfun.com/fetch/76/76680b07f7377f38e2c7c14473fa706c.jpeg"
+      "url": "https://w.forfun.com/fetch/76/76680b07f7377f38e2c7c14473fa706c.jpeg",
+      "comments": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Ultrices in iaculis nunc sed augue lacus viverra vitae."
+      ]
     },
     {
-      "autor":"Bill",
+      "author":"Bill",
       "date": "14-07-2023",
-      "url": "https://w.forfun.com/fetch/d2/d21aba72035446aa2741fad1d7ba8735.jpeg"
+      "url": "https://w.forfun.com/fetch/d2/d21aba72035446aa2741fad1d7ba8735.jpeg",
+      "comments": [
+        "Aenean et tortor at risus viverra adipiscing. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Facilisis magna etiam tempor orci eu lobortis elementum nibh."
+      ]
     }
-
-
-
   ]
 }

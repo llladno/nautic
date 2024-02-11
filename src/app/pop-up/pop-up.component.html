@@ -1,0 +1,16 @@
+<div class="place">
+  <div>
+    <img [src]="photo.url">
+    <div class="info">
+      <p>{{photo.comments.length}}
+      <img src="assets/img/comments.png" class="commentImg"></p>
+        <p>Автор: {{photo.author}} | Дата: {{photo.date}} </p>
+    </div>
+
+    <div *ngFor="let b of photo.comments" class="comment">
+      {{b}}
+    </div>
+  </div>
+</div>
+<button (click)="changepopup.emit(false)">X</button>
+
